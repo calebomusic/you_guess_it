@@ -5,9 +5,23 @@ import GraphWidget from './graphWidget.jsx';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
+  const Question = () => {
+    return(<div>I am a question</div>)
+  };
+
+  const BeforeGuess = () => {
+    return(<div>Answer</div>)
+  };
+
+  const Answer = () => {
+    return(<div>Answer!</div>)
+  };
 
   ReactDom.render(<GraphWidget graphId='test'
-                               options={mexicoAndOtherOptions}/>,
+                               options={mexicoAndOtherOptions}
+                               question={Question}
+                               beforeGuess={BeforeGuess}
+                               answer={Answer}/>,
                              root);
 });
 

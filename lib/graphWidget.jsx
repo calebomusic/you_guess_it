@@ -13,18 +13,18 @@ class GraphWidget extends React.Component {
   render() {
     return(
       <div id={'graphWidget-' + this.props.graphId}>
-        <div className={'before-' + this.props.graphId}>
-
+        <div className={'question-' + this.props.graphId}>
+          {this.props.question()}
         </div>
 
         <div id={this.props.graphId}></div>
         <div id={'beforeGuess-' + this.props.graphId}
              className={'beforeGuessComplete-' + this.props.graphId}>
-
+          {this.props.beforeGuess()}
         </div>
         <div className="hidden"
-             id={'answerText-' + this.props.graphId}>
-
+             id={'answer-' + this.props.graphId}>
+            {this.props.answer()}
         </div>
       </div>
     )
