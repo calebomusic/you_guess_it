@@ -63,7 +63,7 @@ a {
   border-color: #FF4136;
 }
 
-[id^=answerText] {
+[id^=answer] {
   margin-bottom: 10px;
 }
 
