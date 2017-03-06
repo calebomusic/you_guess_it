@@ -1,7 +1,5 @@
 # Ignore bundler config.
 node_modules/
-bundle.js
-bundle.js.map
 .git
 
 # Ignore all logfiles and tempfiles.
