@@ -1,6 +1,6 @@
 # You Guess It
 
-You Guess It is a React widget is a inspired by NYT [You](https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) [Draw It](https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html) pieces.
+You Guess It is a React widget is a inspired by the NYT's [You](https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html) [Draw It](https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html) pieces.
 
 It is built using JavaScript, D3, and React.
 
