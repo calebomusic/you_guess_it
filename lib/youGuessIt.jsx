@@ -27,11 +27,7 @@ const Demo = () => {
 
 const QuestionOne = () => {
   return(<div>
-            <b>You Guess It Widgets were modelled off of the
-              NYT <a href='https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html'>
-              You Draw It
-            </a> <a href='https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html'>
-            series</a>. Here is a sample!
+            <b>DEMO!
              </b>
            <br></br>
            <br></br>
