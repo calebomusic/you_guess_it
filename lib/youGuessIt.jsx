@@ -31,8 +31,10 @@ const QuestionOne = () => {
               NYT <a href='https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html'>
               You Draw It
             </a> <a href='https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html'>
-            series</a>.
-              Here's a sample!</b>
+            series</a>. Here is a sample!
+             </b>
+           <br></br>
+           <br></br>
             From 1860 to 2010, what percentage of Americans were foreign born?</div>)
 };
 
@@ -82,7 +84,10 @@ const foreignBornOptions = {
 
 const QuestionTwo = () => {
   return(<div>This graph shows the approximate number of unauthorized immigrants from Mexico from 1990 to 2014.
-      How many were from countries other than Mexico?</div>)
+          <br></br>
+          <br></br>
+          How many were from countries other than Mexico?
+        </div>)
 };
 
 const BeforeGuessTwo = () => {
@@ -90,7 +95,12 @@ const BeforeGuessTwo = () => {
 };
 
 const AnswerTwo = () => {
-  return(<div>That many! Go forth and use this widget in your own digital jounalism pieces.</div>)
+  return(<div>
+          That many! Check out the documentation <a href='https://github.com/calebomusic/you_guess_it'>here</a>.
+          <br></br>
+          <br></br>
+          Numbers from <a href='http://www.pewhispanic.org/2015/09/28/chapter-5-u-s-foreign-born-population-trends/'>The Pew Research Center</a>.
+        </div>)
 };
 
 const mexicanImmigrationData = [
