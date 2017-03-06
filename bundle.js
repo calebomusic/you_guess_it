@@ -117,19 +117,7 @@ var QuestionOne = function QuestionOne() {
     _react2.default.createElement(
       'b',
       null,
-      'You Guess It Widgets were modelled off of the NYT ',
-      _react2.default.createElement(
-        'a',
-        { href: 'https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html' },
-        'You Draw It'
-      ),
-      ' ',
-      _react2.default.createElement(
-        'a',
-        { href: 'https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html' },
-        'series'
-      ),
-      '. Here is a sample!'
+      'DEMO!'
     ),
     _react2.default.createElement('br', null),
     _react2.default.createElement('br', null),
