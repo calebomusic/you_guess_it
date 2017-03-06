@@ -115,6 +115,7 @@ svg {
   width: 200px;
   opacity: .3;
   margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 8px;
 }
 
@@ -130,6 +131,7 @@ svg {
   padding-top: 5px;
   width: 200px;
   margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 8px;
 }
 
