@@ -5,25 +5,93 @@ import GraphWidget from './graphWidget.jsx';
 
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  const Question = () => {
-    return(<div>I am a question</div>)
-  };
 
-  const BeforeGuess = () => {
-    return(<div>Answer</div>)
-  };
-
-  const Answer = () => {
-    return(<div>Answer!</div>)
-  };
-
-  ReactDom.render(<GraphWidget graphId='test'
-                               options={mexicoAndOtherOptions}
-                               question={Question}
-                               beforeGuess={BeforeGuess}
-                               answer={Answer}/>,
-                             root);
+  ReactDom.render(<Demo />,
+                  root);
 });
+
+const Demo = () => {
+  return(<div>
+          <GraphWidget graphId='foreignBorn'
+                       options={foreignBornOptions}
+                       question={QuestionOne}
+                       beforeGuess={BeforeGuessOne}
+                       answer={AnswerOne}/>
+          <GraphWidget graphId='test'
+                       options={mexicoAndOtherOptions}
+                       question={QuestionTwo}
+                       beforeGuess={BeforeGuessTwo}
+                       answer={AnswerTwo}/>
+        </div>)
+}
+
+const QuestionOne = () => {
+  return(<div>
+            <b>You Guess It Widgets were modelled off of the
+              NYT <a href='https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html'>
+              You Draw It
+            </a> <a href='https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html'>
+            series</a>.
+              Here's a sample!</b>
+            From 1860 to 2010, what percentage of Americans were foreign born?</div>)
+};
+
+const BeforeGuessOne = () => {
+  return(<div>Show me how I did.</div>)
+};
+
+const AnswerOne = () => {
+  return(<div>That percentage of Americans were foreign born.
+      The proportion of foreign born Americans began falling in the 1920s, reaching as low as 4.7% in the 1970s,
+       as <a href="https://en.wikipedia.org/wiki/National_Origins_Formula">The National Origins Formula</a> was introduced, enforcing immigration
+      quotas. <a href="http://www.npr.org/2015/09/10/439114563/americas-forgotten-history-of-mexican-american-repatriation">The Mexican Repatriation</a> also happened which you can read about if you want to be sad.</div>)
+};
+
+const foreignBornData = [
+               { year: 1860, percentage: 0.132 },
+               { year: 1870, percentage: 0.144 },
+               { year: 1880, percentage: 0.133 },
+               { year: 1890, percentage: 0.148 },
+               { year: 1900, percentage: 0.136},
+               { year: 1910, percentage: 0.147 },
+               { year: 1920, percentage: 0.132 },
+               { year: 1930, percentage: 0.116 },
+               { year: 1940, percentage: 0.088 },
+               { year: 1950, percentage: 0.069 },
+               { year: 1960, percentage: 0.054 },
+               { year: 1970, percentage: 0.047},
+               { year: 1980, percentage: 0.062},
+               { year: 1990, percentage: 0.079},
+               { year: 2000, percentage: 0.111},
+               { year: 2010, percentage: 0.129}
+             ];
+
+const foreignBornOptions = {
+  xAxisText: 'Year',
+  yAxisText: 'Percentage foreign born',
+  yMin: 0,
+  yMax: 0.2,
+  xMin: 1860,
+  xMax: 2010,
+  xAxisLabelFormat: 'd',
+  yAxisLabelFormat: '.0%',
+  data: foreignBornData,
+  xKey: 'year',
+  yKey: 'percentage'
+};
+
+const QuestionTwo = () => {
+  return(<div>This graph shows the approximate number of unauthorized immigrants from Mexico from 1990 to 2014.
+      How many were from countries other than Mexico?</div>)
+};
+
+const BeforeGuessTwo = () => {
+  return(<div>Show me how I did.</div>)
+};
+
+const AnswerTwo = () => {
+  return(<div>That many! Go forth and use this widget in your own digital jounalism pieces.</div>)
+};
 
 const mexicanImmigrationData = [
   { year: 1990, population: 2.0 },
